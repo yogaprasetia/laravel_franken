@@ -1,4 +1,4 @@
-FROM nginx:latest
+FROM dunglas/frankenphp:8.3
 
 ENV SERVER_NAME=":80"
 
