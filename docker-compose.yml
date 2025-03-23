@@ -7,10 +7,5 @@ services:
     build: .
     ports:
       - "8001:80"
-    environment:
-      APP_NAME: Laravel
-      APP_ENV: local
-      APP_KEY: base64:6cEySynNymTz1NLuZH93U0nG0dRHyvI6Xwmq+86uaNc=
-      APP_DEBUG: "true"
-      APP_URL: http://localhost
-      DB_CONNECTION: sqlite
+    env_file:
+      - .env
