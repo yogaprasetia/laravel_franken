@@ -7,3 +7,5 @@ services:
     build: .
     ports:
       - "8001:80"
+    environment:
+      - $(cat .env)
